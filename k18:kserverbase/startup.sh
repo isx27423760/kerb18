@@ -4,9 +4,6 @@
 #--------------------------------------
 
 /opt/docker/install.sh && echo "Install OK"
-/usr/sbin/krb5kdc
-/usr/sbin/kadmind -nofork 
-
-#/usr/sbin/krb5kdc && echo "krb5kdc OK"
-#/usr/sbin/kadmind && echo "kadmind OK"
+/usr/sbin/krb5kdc && echo "krb5kdc OK"
+/usr/sbin/kadmind && echo "kadmind OK"
 
