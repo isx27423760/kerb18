@@ -14,6 +14,6 @@ per generar autenticació PAM amb kerberos i ldap cal:
 Execució:
 ```
 docker run --rm --name ldap.edt.org -h ldap.edt.org --net mynet -d edtasixm06/ldapserver:18group
-docker run --rm --name khost.edt.org -h khost.edt.org --network mynet -d francs2/k18:khostpl
+docker run --rm --name khost.edt.org -h khost.edt.org --network mynet -it francs2/k18:khostpl
 
 ```
