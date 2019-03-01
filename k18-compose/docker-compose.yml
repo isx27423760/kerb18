@@ -1,0 +1,22 @@
+version: "3"
+services:
+  kserver:
+    image: francs2/k18:kserver
+    deploy: 
+      replicas: 3
+    networks:
+      - mynet
+  sshd:
+    image: francs2/k18:sshd
+    networks:
+      - mynet
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports:
+      - "50001:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    networks:
+      - mynet
+networks:
+  mynet:
